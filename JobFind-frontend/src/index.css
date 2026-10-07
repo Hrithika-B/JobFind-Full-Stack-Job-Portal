@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #1f2937;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+nav {
+    height: 82px;
+    padding: 0 60px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+
+    position: relative;
+    z-index: 100;
+}
+
+nav > a {
+    color: #172033;
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    transition: 0.2s ease;
+}
+
+nav > a:hover {
+    color: #4f46e5;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+nav > div a:hover {
+    color: #bfdbfe;
+}
+
+nav button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #dc2626;
+}
+
+/* =========================
+   GENERAL PAGE
+   ========================= */
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 30px;
+}
+
+.page-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #111827;
+}
+
+.page-container h3 {
+    color: #1f2937;
+}
+
+/* =========================
+   DASHBOARD LINKS
+   ========================= */
+
+.dashboard-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.dashboard-links a {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+.dashboard-links a:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   CREATE JOB LINK
+   ========================= */
+
+.page-container > a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.page-container > a:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   JOB CARDS
+   ========================= */
+
+.job-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.job-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+}
+
+.job-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: #111827;
+}
+
+.job-card p {
+    margin: 8px 0;
+    color: #6b7280;
+}
+
+.job-card a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 12px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.job-card button {
+    margin-top: 15px;
+    padding: 9px 16px;
+    background: #ef4444;
+    color: white;
+    border-radius: 6px;
+}
+
+.job-card button:hover {
+    background: #dc2626;
+}
+
+/* =========================
+   FORMS
+   ========================= */
+
+/* =========================
+   FORMS
+   ========================= */
+
+.form-container {
+    width: 450px;
+    max-width: calc(100% - 40px);
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.25);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #111827;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.form-container button {
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-container button:hover {
+    background: #1d4ed8;
+}
+
+.error {
+    color: #dc2626;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.search-container button {
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+}
+
+/* =========================
+   HOME PAGE
+   ========================= */
+
+.home-container {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h1 {
+    font-size: 46px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.home-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-buttons a {
+    padding: 12px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.home-buttons a:first-child {
+    background: #2563eb;
+    color: white;
+}
+
+.home-buttons a:last-child {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    background: white;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 0 15px;
+    }
+
+    nav > div {
+        gap: 10px;
+    }
+
+    nav > div a {
+        font-size: 13px;
+    }
+
+    nav > a {
+        font-size: 18px;
+    }
+
+    .page-container {
+        padding: 25px 15px;
+    }
+
+    .form-container {
+        margin: 30px auto;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+}
